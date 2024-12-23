@@ -6,3 +6,12 @@ const observer = new IntersectionObserver((entries) => {
   });
 }, { threshold: 0.7 });
 videos.forEach(v => observer.observe(v));
+
+const dialog = document.getElementById('playDialog');
+dialog.showModal();
+
+const playButton = document.getElementById('playButton');
+playButton.addEventListener('click', () => {
+  
+  dialog.close();
+});
