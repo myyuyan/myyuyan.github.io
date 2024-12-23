@@ -15,5 +15,8 @@ section {
   display: flex; justify-content: center; align-items: center;
 }
 video {
-  width: 100vw; height: 100vh; object-fit: cover;
+  width: 100vw; 
+  height: 100vh; 
+  object-fit: contain;
+  background-color: black;
 }
